@@ -8,4 +8,31 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\.DS_Store" />
+    <Content Include="bin\Debug\net6.0\D\D.vhd" />
+    <Content Include="bin\Debug\net6.0\D\run.bat" />
+    <Content Include="bin\Debug\net6.0\D\tb_D.vhd" />
+    <Content Include="bin\Debug\net6.0\vhdl-generator" />
+    <Content Include="bin\Debug\net6.0\vhdl-generator.deps.json" />
+    <Content Include="bin\Debug\net6.0\vhdl-generator.dll" />
+    <Content Include="bin\Debug\net6.0\vhdl-generator.pdb" />
+    <Content Include="bin\Debug\net6.0\vhdl-generator.runtimeconfig.json" />
+    <Content Include="bin\Debug\net6.0\vhdl-installer" />
+    <Content Include="bin\Debug\net6.0\vhdl-installer.deps.json" />
+    <Content Include="bin\Debug\net6.0\vhdl-installer.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bin\**" />
+  </ItemGroup>
+
 </Project>

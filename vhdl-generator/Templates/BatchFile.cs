@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace vhdl_generator.Templates;
 
 public class BatchFile : Template
@@ -14,7 +12,10 @@ rem Analyze source files
 rem Elaborate testbench entity 
 %GHDL% -e %FLAGS% tb_{Entity.ToLower()}
 rem Run simulation and save waveform 
-%GHDL% -r %FLAGS% tb_{Entity.ToLower()} --wave=wave.ghw --stop-time=1000ns";
+%GHDL% -r %FLAGS% tb_{Entity.ToLower()} --wave=wave.ghw --stop-time=1000ns
+gtkwave wave.ghw
+pause
+";
 
     public BatchFile(string entity, string name) : base(entity, name)
     {

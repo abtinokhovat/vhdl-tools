@@ -1,6 +1,6 @@
 ### DotnetCore template
 # .NET Core build folders
-bin/
+vhdl-generator/bin
 obj/
 
 # Common node modules locations
